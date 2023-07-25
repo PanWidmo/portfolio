@@ -1,0 +1,10 @@
+@import '../../assets/styles/base';
+
+.footer {
+    &__content {
+        display: grid;
+        place-content: center;
+        max-width: $content-container;
+        margin: 0.7rem auto;
+    }
+}
