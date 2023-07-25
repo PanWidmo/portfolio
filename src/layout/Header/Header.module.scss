@@ -1,0 +1,140 @@
+@import '../../assets/styles/base';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    &__container {
+        max-width: $content-container;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+
+        @include mobile-only {
+            padding: 0.5rem 1.5rem;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: $header-content-height;
+    gap: 4rem;
+
+    @include tablet-only {
+        gap: 3rem;
+    }
+
+    @include mobile-only {
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 700;
+
+        @include mobile-only {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__menu {
+        @include not-mobile {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            width: 100%;
+        }
+
+        @include tablet-only {
+            gap: 2.6rem;
+        }
+
+        @include mobile-only {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: $header-full-height-mobile;
+            right: -100%;
+            text-align: center;
+            background-color: $dark-blue-color;
+            padding-top: 2rem;
+            transition: 0.4s;
+        }
+    }
+
+    &__item {
+        font-size: 2rem;
+
+        @include tablet-only {
+            font-size: 1.5rem;
+        }
+
+        @include mobile-only {
+            &:not(:last-child) {
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        &:last-child {
+            @include not-mobile {
+                margin-left: auto;
+            }
+
+            > a {
+                background-color: $pink-color;
+                padding: 1rem;
+                border-radius: 0.6rem;
+
+                @include mobile-only {
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+
+    &__hamburger {
+        width: 25px;
+        cursor: pointer;
+        background: none;
+        border: none;
+
+        @include not-mobile {
+            display: none;
+        }
+    }
+
+    &__bar,
+    &__hamburger:before,
+    &__hamburger:after {
+        content: '';
+        display: block;
+        height: 3px;
+        margin: 5px 0;
+        background-color: $white-color;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+.showMenu .nav {
+    &__menu {
+        right: 0;
+    }
+
+    &__hamburger {
+        &:before {
+            transform: translateY(8px) rotate(-45deg);
+        }
+
+        &:after {
+            transform: translateY(-8px) rotate(45deg);
+        }
+    }
+
+    &__bar {
+        opacity: 0;
+    }
+}
