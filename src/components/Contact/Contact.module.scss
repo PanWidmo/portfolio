@@ -1,0 +1,140 @@
+@import '../../assets/styles/base';
+
+.contact {
+    height: calc(100vh - $header-full-height - $footer-full-height);
+    max-width: $content-container;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include mobile-only {
+        height: calc(100vh - $footer-full-height);
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+        gap: 10rem;
+        padding: 0 1rem;
+
+        @include tablet-only {
+            gap: 5rem;
+        }
+
+        @include mobile-only {
+            flex-direction: column;
+            gap: 2rem;
+            height: 100%;
+        }
+    }
+
+    &__left {
+        flex: 1;
+    }
+
+    &__title {
+        margin-bottom: 5rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-bottom: 0.8rem;
+
+        input,
+        textarea {
+            padding: 1.5rem;
+            background-color: $white-color;
+            border: none;
+            border-radius: 0.6rem;
+            width: 100%;
+
+            @include mobile-only {
+                padding: 1rem;
+            }
+        }
+
+        textarea {
+            @include mobile-only {
+                height: 8rem;
+            }
+        }
+
+        button {
+            background-color: $pink-color;
+            color: $white-color;
+            border: none;
+            cursor: pointer;
+            padding: 2rem;
+            border-radius: $border-radius-04;
+            font-weight: 700;
+            transition: opacity 0.2s ease-in-out;
+
+            @include mobile-only {
+                padding: 1rem;
+            }
+
+            &:is(:hover, :active, :focus) {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info {
+        position: relative;
+        padding-left: 2.5rem;
+
+        > * {
+            position: absolute;
+            top: 0.3rem;
+            left: 0;
+        }
+    }
+
+    &__right {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        @include mobile-only {
+            justify-content: center;
+        }
+
+        ul {
+            @include mobile-only {
+                display: flex;
+                column-gap: 2rem;
+                row-gap: 0.7rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__item {
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 3.3rem;
+            gap: 1.3rem;
+
+            @include mobile-only {
+                font-size: 2.5rem;
+                gap: 0.4rem;
+            }
+        }
+
+        &:not(:last-child) {
+            @include not-mobile {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
