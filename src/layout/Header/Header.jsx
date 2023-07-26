@@ -24,7 +24,7 @@ export const Header = () => {
         <header className={styles.header}>
             <div className={styles.header__container}>
                 <nav className={`${styles.nav} ${isMenuOpen ? styles.showMenu : ''}`}>
-                    <a href="/#home" className={styles.nav__title}>
+                    <a href="/portfolio/#home" className={styles.nav__title}>
                         TB
                     </a>
                     <button className={styles.nav__hamburger} onClick={toggleMenuMobile}>
@@ -32,32 +32,32 @@ export const Header = () => {
                     </button>
                     <ul className={styles.nav__menu}>
                         <li className={styles.nav__item}>
-                            <a href="/#home" onClick={toggleMenuMobile}>
+                            <a href="/portfolio/#home" onClick={toggleMenuMobile}>
                                 Home
                             </a>
                         </li>
                         <li className={styles.nav__item}>
-                            <a href="/#about" onClick={toggleMenuMobile}>
+                            <a href="/portfolio/#about" onClick={toggleMenuMobile}>
                                 About me
                             </a>
                         </li>
                         <li className={styles.nav__item}>
-                            <a href="/#skills" onClick={toggleMenuMobile}>
+                            <a href="/portfolio/#skills" onClick={toggleMenuMobile}>
                                 Skills
                             </a>
                         </li>
                         <li className={styles.nav__item}>
-                            <a href="/#projects" onClick={toggleMenuMobile}>
+                            <a href="/portfolio/#projects" onClick={toggleMenuMobile}>
                                 Projects
                             </a>
                         </li>
                         <li className={styles.nav__item}>
-                            <a href="/#contact" onClick={toggleMenuMobile}>
+                            <a href="/portfolio/#contact" onClick={toggleMenuMobile}>
                                 Contact
                             </a>
                         </li>
                         <li className={styles.nav__item}>
-                            <a href="/#contact" onClick={toggleMenuMobile}>
+                            <a href="/portfolio/#contact" onClick={toggleMenuMobile}>
                                 Hire Now
                             </a>
                         </li>
