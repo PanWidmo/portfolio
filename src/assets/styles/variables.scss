@@ -2,10 +2,19 @@
 $tablet: 600px;
 $desktop: 1024px;
 $content-container: 1200px;
+$header-content-height: 40px;
+$header-full-height: calc($header-content-height + 4rem);
+$header-full-height-mobile: calc($header-content-height + 1rem);
+$footer-full-height: 37px;
 
 // Colors
 $white-color: #fff;
 $black-color: #000;
-$navy-color: #025464;
-$dark-orange-color: #e57c23;
-$light-orange-color: #e8aa42;
+$pink-color: #da4ea2;
+$light-pink-color: #eeafd5;
+$dark-blue-color: #170334;
+$purple-color: #280255;
+
+// Radiuses
+$border-radius-04: 0.4em;
+$border-radius-50: 50%;
