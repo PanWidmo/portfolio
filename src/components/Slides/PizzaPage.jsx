@@ -1,4 +1,4 @@
-import styles from '@/components/slides/Slide.module.scss';
+import styles from '@/components/Slides/Slide.module.scss';
 export const PizzaPage = () => {
     return (
         <div className={styles.slide}>

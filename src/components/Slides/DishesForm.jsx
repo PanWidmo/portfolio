@@ -1,4 +1,4 @@
-import styles from '@/components/slides/Slide.module.scss';
+import styles from '@/components/Slides/Slide.module.scss';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { TbWorldShare } from 'react-icons/tb';
 export const DishesForm = () => {
