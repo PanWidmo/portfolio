@@ -1,0 +1,116 @@
+@import '../../assets/styles/base';
+
+.skills {
+    max-width: $content-container;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: $header-full-height 1.5rem 0;
+
+    @include mobile-only {
+        padding-top: $header-full-height-mobile;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__item {
+        cursor: pointer;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke: 1px $white-color;
+        font-size: 5rem;
+        position: relative;
+
+        @include mobile-only {
+            font-size: 4rem;
+        }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $light-pink-color;
+            overflow: hidden;
+            width: 0;
+            white-space: nowrap;
+        }
+
+        &:is(:hover, :active, :focus)::after {
+            animation: moveText 0.5s linear both;
+
+            @keyframes moveText {
+                to {
+                    width: 100%;
+                }
+            }
+        }
+
+        &ReactJs::after {
+            content: 'ReactJs';
+        }
+
+        &JavaScript::after {
+            content: 'JavaScript';
+        }
+
+        &HTML::after {
+            content: 'HTML';
+        }
+
+        &CSS::after {
+            content: 'CSS';
+        }
+
+        &SAAS::after {
+            content: 'SAAS';
+        }
+
+        &GIT::after {
+            content: 'GIT';
+        }
+
+        &FIGMA::after {
+            content: 'FIGMA';
+        }
+
+        &RWD::after {
+            content: 'RWD';
+        }
+    }
+
+    &__right {
+        flex: 1;
+        display: grid;
+        place-items: center;
+    }
+
+    &__img {
+        width: 450px;
+        height: 450px;
+        object-fit: contain;
+        animation: animate 2s infinite ease alternate;
+
+        @include mobile-only {
+            width: 200px;
+            height: 200px;
+        }
+
+        @keyframes animate {
+            to {
+                transform: translateY(30px);
+            }
+        }
+    }
+}
