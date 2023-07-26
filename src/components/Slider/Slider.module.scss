@@ -1,0 +1,68 @@
+@import '../../assets/styles/base';
+
+.slider {
+    position: relative;
+
+    @include desktop-only {
+        margin: 6rem 0;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 1rem 0 0;
+        position: relative;
+
+        @include desktop-only {
+            right: 25%;
+        }
+    }
+
+    :global(.swiper) {
+        @include not-desktop {
+            padding-bottom: 4rem;
+        }
+    }
+
+    :global(.swiper-pagination) {
+        bottom: 0 !important;
+
+        @include desktop-only {
+            left: -25% !important;
+        }
+    }
+
+    :global(.swiper-pagination-bullet) {
+        background: $white-color;
+        opacity: 0.5;
+        border-radius: $border-radius-04;
+        width: 2rem;
+    }
+
+    :global(.swiper-pagination-bullet-active) {
+        opacity: 1;
+    }
+
+    :global(.swiper-button-prev) {
+        left: unset;
+    }
+
+    :global(.swiper-button-next) {
+        right: unset;
+    }
+
+    :global(.swiper-button-prev),
+    :global(.swiper-button-next) {
+        position: relative;
+        margin-top: 0;
+        border: 2px solid $white-color;
+        border-radius: $border-radius-50;
+        padding: 2rem;
+        color: $white-color;
+
+        &::after {
+            font-size: inherit;
+        }
+    }
+}
