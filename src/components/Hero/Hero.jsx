@@ -8,12 +8,12 @@ export const Hero = () => {
                 <h1> Tomasz Baran </h1>
                 <h2> Front-end Developer </h2>
 
-                <a href="/portfolio/#about" className={styles.hero__button}>
+                <a href="/#about" className={styles.hero__button}>
                     Read more <FiCornerRightDown />
                 </a>
             </div>
             <div className={styles.hero__right}>
-                <img src="./img/ms.jpg" alt="Author photo" className={styles.hero__img} />
+                <img src="./img/ms.jpg" alt="Author portrait" className={styles.hero__img} />
             </div>
         </section>
     );

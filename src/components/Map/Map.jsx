@@ -12,7 +12,7 @@ export const Map = () => {
             }}
             className={styles.map}
         >
-            <Geographies geography="/portfolio/features.json" fill="#2C065D" stroke="#FFFFFF" strokeWidth={0.5}>
+            <Geographies geography="/features.json" fill="#2C065D" stroke="#FFFFFF" strokeWidth={0.5}>
                 {({ geographies }) => geographies.map((geo) => <Geography key={geo.rsmKey} geography={geo} />)}
             </Geographies>
             <Annotation
