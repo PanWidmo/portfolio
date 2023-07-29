@@ -72,7 +72,7 @@ export const Contact = () => {
                             </a>
                         </li>
                         <li className={styles.contact__item}>
-                            <a href="https://github.com/PanWidmo" target="_blank" rel="noreferrer">
+                            <a href="https://github.com/tomaszbaranww" target="_blank" rel="noreferrer">
                                 <AiOutlineGithub /> GitHub
                             </a>
                         </li>
