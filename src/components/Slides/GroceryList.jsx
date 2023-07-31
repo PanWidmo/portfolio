@@ -27,7 +27,7 @@ export const GroceryList = () => {
                     </a>
                 </div>
             </div>
-            <img className={styles.slide__img} src="./img/grocery-list.png" alt="Grocery List project screenshot" />
+            <img className={styles.slide__img} src="./screenshots/grocery-list.png" alt="Grocery List project screenshot" />
         </div>
     );
 };

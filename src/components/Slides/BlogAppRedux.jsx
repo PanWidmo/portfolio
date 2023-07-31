@@ -36,7 +36,7 @@ export const BlogAppRedux = () => {
                     </a>
                 </div>
             </div>
-            <img className={styles.slide__img} src="./img/blog-app-redux.png" alt="Blog app redux project screenshot" />
+            <img className={styles.slide__img} src="./screenshots/blog-app-redux.png" alt="Blog app redux project screenshot" />
         </div>
     );
 };

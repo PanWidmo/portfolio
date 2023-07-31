@@ -36,7 +36,7 @@ export const DishesForm = () => {
                     </a>
                 </div>
             </div>
-            <img className={styles.slide__img} src="./img/dishes-form.png" alt="Dishes form project screenshot" />
+            <img className={styles.slide__img} src="./screenshots/dishes-form.png" alt="Dishes form project screenshot" />
         </div>
     );
 };
