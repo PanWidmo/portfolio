@@ -9,6 +9,7 @@ import { BlogAppRedux } from '@/components/Slides/BlogAppRedux.jsx';
 import { GroceryList } from '@/components/Slides/GroceryList.jsx';
 import { PizzaPage } from '@/components/Slides/PizzaPage.jsx';
 import { InventoryOnline } from '@/components/Slides/InventoryOnline.jsx';
+import { BlogApp } from '@/components/Slides/BlogApp.jsx';
 
 export const Slider = () => {
     return (
@@ -32,6 +33,9 @@ export const Slider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <BlogAppRedux />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <BlogApp />
                 </SwiperSlide>
                 <SwiperSlide>
                     <GroceryList />
