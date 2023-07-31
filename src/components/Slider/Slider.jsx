@@ -8,6 +8,7 @@ import { DishesForm } from '@/components/Slides/DishesForm.jsx';
 import { BlogAppRedux } from '@/components/Slides/BlogAppRedux.jsx';
 import { GroceryList } from '@/components/Slides/GroceryList.jsx';
 import { PizzaPage } from '@/components/Slides/PizzaPage.jsx';
+import { InventoryOnline } from '@/components/Slides/InventoryOnline.jsx';
 
 export const Slider = () => {
     return (
@@ -23,6 +24,9 @@ export const Slider = () => {
                     clickable: true,
                 }}
             >
+                <SwiperSlide>
+                    <InventoryOnline />
+                </SwiperSlide>
                 <SwiperSlide>
                     <DishesForm />
                 </SwiperSlide>
