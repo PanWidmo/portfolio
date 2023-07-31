@@ -17,12 +17,12 @@ export const GroceryList = () => {
                         SASS Module
                     </a>
                 </div>
-                <p className={styles.slide__description}>Grocery list page- useful to keep track of what to buy.</p>
+                <p className={styles.slide__description}>Grocery list page- useful to keep track of what to buy. Includes search functionality.</p>
                 <div className={styles.slide__buttons}>
-                    <a href="https://panwidmo.github.io/grocery-list/" target="_blank" rel="noreferrer" className={styles.slide__button}>
+                    <a href="https://tomaszbaranww.github.io/grocery-list/" target="_blank" rel="noreferrer" className={styles.slide__button}>
                         <TbWorldShare /> Live
                     </a>
-                    <a href="https://github.com/PanWidmo/grocery-list" target="_blank" rel="noreferrer" className={styles.slide__button}>
+                    <a href="https://github.com/tomaszbaranww/grocery-list" target="_blank" rel="noreferrer" className={styles.slide__button}>
                         <AiOutlineGithub /> GitHub
                     </a>
                 </div>
