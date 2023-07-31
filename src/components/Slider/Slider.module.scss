@@ -21,7 +21,7 @@
 
     :global(.swiper) {
         @include not-desktop {
-            padding-bottom: 4rem;
+            padding-bottom: 2rem;
         }
     }
 
