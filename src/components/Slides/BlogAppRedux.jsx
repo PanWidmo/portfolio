@@ -28,10 +28,10 @@ export const BlogAppRedux = () => {
                 </div>
                 <p className={styles.slide__description}>Blog page with options to create, edit, delete and display posts.</p>
                 <div className={styles.slide__buttons}>
-                    <a href="https://panwidmo.github.io/blog-app-redux/" target="_blank" rel="noreferrer" className={styles.slide__button}>
+                    <a href="https://tomaszbaranww.github.io/blog-app-redux/" target="_blank" rel="noreferrer" className={styles.slide__button}>
                         <TbWorldShare /> Live
                     </a>
-                    <a href="https://github.com/PanWidmo/blog-app-redux" target="_blank" rel="noreferrer" className={styles.slide__button}>
+                    <a href="https://github.com/tomaszbaranww/blog-app-redux" target="_blank" rel="noreferrer" className={styles.slide__button}>
                         <AiOutlineGithub /> GitHub
                     </a>
                 </div>
