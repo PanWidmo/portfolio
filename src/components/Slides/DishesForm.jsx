@@ -28,10 +28,10 @@ export const DishesForm = () => {
                 </div>
                 <p className={styles.slide__description}>Simple form to create new dish with validation and conditional fields.</p>
                 <div className={styles.slide__buttons}>
-                    <a href="https://panwidmo.github.io/dishes-form/" target="_blank" rel="noreferrer" className={styles.slide__button}>
+                    <a href="https://tomaszbaranww.github.io/dishes-form/" target="_blank" rel="noreferrer" className={styles.slide__button}>
                         <TbWorldShare /> Live
                     </a>
-                    <a href="https://github.com/PanWidmo/dishes-form" target="_blank" rel="noreferrer" className={styles.slide__button}>
+                    <a href="https://github.com/tomaszbaranww/dishes-form" target="_blank" rel="noreferrer" className={styles.slide__button}>
                         <AiOutlineGithub /> GitHub
                     </a>
                 </div>
