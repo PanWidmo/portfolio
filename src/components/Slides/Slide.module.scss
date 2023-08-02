@@ -30,7 +30,7 @@
         justify-content: center;
 
         @include not-desktop {
-            gap: 1rem;
+            gap: 0.7rem;
         }
 
         a,
