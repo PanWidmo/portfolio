@@ -10,6 +10,7 @@ import { GroceryList } from '@/components/Slides/GroceryList.jsx';
 import { PizzaPage } from '@/components/Slides/PizzaPage.jsx';
 import { InventoryOnline } from '@/components/Slides/InventoryOnline.jsx';
 import { BlogApp } from '@/components/Slides/BlogApp.jsx';
+import { EliteBank } from '@/components/Slides/EliteBank.jsx';
 
 export const Slider = () => {
     return (
@@ -25,6 +26,9 @@ export const Slider = () => {
                     clickable: true,
                 }}
             >
+                <SwiperSlide>
+                    <EliteBank />
+                </SwiperSlide>
                 <SwiperSlide>
                     <InventoryOnline />
                 </SwiperSlide>
